@@ -6,4 +6,5 @@
 6666
 7777
 8888
-host2=yyy
+host2=yyy  host1=>xxx
+10101010
