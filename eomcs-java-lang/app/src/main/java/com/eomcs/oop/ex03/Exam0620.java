@@ -14,9 +14,6 @@ public class Exam0620 {
     //
     static {
       System.out.println("Static{} 11111");
-    }
-
-    static {
       System.out.println("Static{} 22222");
     }
   }

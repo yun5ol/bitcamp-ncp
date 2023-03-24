@@ -20,11 +20,12 @@ public class Exam0120 {
   public static void main(String[] args) {
 
     // 저장하고 싶은 데이터 개수 만큼 인스턴스를 생성하라!
-    Score s1 = new Score(); // 1명 분의 성적 데이터를 저장할 메모리
+    Score s1 = new Score(); // 1명 분의 성적 데이터를 저장할 메모리 (=인스턴스,객체,변수)
     Score s2 = new Score();
     Score s3 = new Score();
 
     // 각 인스턴스에 한 명의 성적 데이터를 저장하라!
+    // => 인스턴스 변수는 앞에 주소가!
     s1.name = "홍길동";
     s1.kor = 100;
     s1.eng = 90;

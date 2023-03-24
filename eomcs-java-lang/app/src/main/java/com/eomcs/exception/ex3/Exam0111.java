@@ -13,6 +13,7 @@ public class Exam0111 {
     // => throw [Throwable 객체];
     //    throw new String("예외가 발생했습니다!"); // 컴파일 오류!
     throw new RuntimeException("예외가 발생했습니다!");
+    // RuntimeException :throw의 서브
   }
 
   static void test() {

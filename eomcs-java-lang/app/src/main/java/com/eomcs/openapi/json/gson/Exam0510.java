@@ -32,6 +32,7 @@ public class Exam0510 {
     members.add(m2);
     members.add(m3);
 
+    // project에서 member, members의arraylist를 사용
     Project p = new Project();
     p.setNo(11);
     p.setTitle("제목");
@@ -54,4 +55,5 @@ public class Exam0510 {
 //    프로퍼티명 : [{...},{...},{...},...],
 //    ...
 // }
+// 빈 arraylist는 []
 //

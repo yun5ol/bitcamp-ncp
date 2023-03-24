@@ -17,8 +17,9 @@ public class Exam0110 {
     m.setTel("010-2222-1111");
     m.setRegisteredDate(new Date(System.currentTimeMillis()));
 
-    // 2) JSON 처리 객체 준비
+    // 2) JSON 처리 객체 준비 // ObjectMapper
     ObjectMapper mapper = new ObjectMapper();
+    // 날짜가 밀리세컨드로 표현
 
     // 3) 객체의 값을 JSON 문자열로 얻기
     String jsonStr = mapper.writeValueAsString(m);
@@ -29,7 +30,7 @@ public class Exam0110 {
 
 // JSON 객체 형식 - { 객체 정보 }
 // => { "프로퍼티명" : 값, "프로퍼티명": 값, ...}
-// 
+//
 // 값:
 // - 문자열 => "값"
 // - 숫자   => 값

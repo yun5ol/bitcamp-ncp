@@ -4,7 +4,7 @@ package com.eomcs.oop.ex06.e;
 class D {
   // 변수 초기화 문장으로 값을 초기화시킬 수 있다.
   // => 변수 초기화 문장은 컴파일 될 때 생성자로 복사되기 때문이다.
-  final int v1 = 100;
+  final int v1 = 100; // 여기두는게 직관적으로 좋음
 
 
   public D() {

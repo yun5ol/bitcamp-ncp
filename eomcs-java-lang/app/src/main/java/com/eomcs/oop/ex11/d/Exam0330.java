@@ -1,4 +1,4 @@
-// 로컬 클래스에서 메서드에 선언된 로컬 변수 접근하기
+// 로컬 클래스에서 메서드에 선언된 로컬 변수 접근하기 => final 또는 final 처럼
 package com.eomcs.oop.ex11.d;
 
 class D3 {
@@ -7,7 +7,7 @@ class D3 {
     final int v1 = 1;
     int v2 = 2;
     int v3 = 3;
-    v3 = 30;
+    //v3 = 30;
 
     class X {
       void f() {
@@ -15,11 +15,12 @@ class D3 {
         // 1) final 로 선언된 경우
         System.out.printf("v1 = %d\n", v1);
 
-        // 2) final 로 선언된 것은 아니지만 값을 한 번만 할당한 경우.
+        // 2) final 로 선언된 것은 아니지만 값을 한 번만 할당한 경우. effectively final
         System.out.printf("v2 = %d\n", v2);
 
-        // => 값을 여러 번 할당한 경우에는 접근할 수 없다.
-        //        System.out.printf("v3 = %d\n", v3); // 컴파일 오류!
+        // => 로컬클래스에서 로컬 변수에 접근할 때는
+        // 값을 여러 번 할당한 경우에는 접근할 수 없다.
+        System.out.printf("v3 = %d\n", v3); // 컴파일 오류!
 
         // 결론!
         // - 상수 값이거나 상수에 준하는 경우(값을 한 번만 할당한 경우)

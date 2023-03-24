@@ -12,18 +12,18 @@ public class Exam0130 {
     // 2) JSON 처리 객체 준비
     Gson gson = new Gson();
 
-    // 3) JSON 문자열을 가지고 객체 만들기
-    // - JSON 문자열에서 프로퍼티 이름과 일치하는 필드가 객체에 있다면 값을 설정해 준다. 
-    // - 예)
-    //   JSON 문자열     ------>   Board 객체
-    //     no                         no
-    //     name                       X
-    //     email                      X
-    //     password                   X
-    //     photo                      X
-    //     tel                        X
-    //     registeredDate             registeredDate
-    // 
+    //     3) JSON 문자열을 가지고 객체 만들기
+    //     - JSON 문자열에서 프로퍼티 이름과 일치하는 필드가 객체에 있다면 값을 설정해 준다.
+    //     - 예) 프로퍼티:세터,게터 != 필드
+    //       JSON 문자열     ------>   Board 객체
+    //         no                         no
+    //         name                       X
+    //         email                      X
+    //         password                   X
+    //         photo                      X
+    //         tel                        X
+    //         registeredDate             registeredDate
+    //
     Board b = gson.fromJson(jsonStr, Board.class);
 
     System.out.println(b);

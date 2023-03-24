@@ -22,7 +22,7 @@ public class Exam0131 {
     obj2.gender = 1;
     obj2.working = false;
 
-    System.out.println(obj1 == obj2);
+    System.out.println(obj1 == obj2); // 주소 달라
     System.out.println(obj1.equals(obj2));
 
     // 결론!
@@ -53,7 +53,6 @@ public class Exam0131 {
           && Objects.equals(name, other.name) && Objects.equals(tel, other.tel)
           && working == other.working;
     }
-
   }
 
 }

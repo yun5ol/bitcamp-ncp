@@ -21,7 +21,7 @@ public class Exam0640 {
 
   public static void main(String[] args) throws Exception {
 
-    try (
+    try ( // try () : try-with-resources 
         // A 클래스는 AutoCloseable 구현체가 아니기 때문에 여기에 선언할 수 없다.
         //        A obj = new A(); // 컴파일 오류!
 

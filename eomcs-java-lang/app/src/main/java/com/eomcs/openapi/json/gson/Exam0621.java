@@ -3,6 +3,7 @@ package com.eomcs.openapi.json.gson;
 
 import java.lang.reflect.Type;
 import java.util.Collection;
+import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonDeserializationContext;
@@ -10,7 +11,6 @@ import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
-import com.google.gson.reflect.TypeToken;
 
 public class Exam0621 {
   public static void main(String[] args) {
@@ -42,6 +42,7 @@ public class Exam0621 {
 
     // 공장을 통해 Gson 객체를 준비한다.
     Gson gson = gsonBuilder.create();
+    // 622에서는 어댑터를 생성할 예정
 
     // Gson 객체가 JSON 데이터를 가지고 객체를 생성할 때 알아야 하는 객체 타입 정보 준비
     Type collectionType = TypeToken.getParameterized(Collection.class, Member.class).getType();

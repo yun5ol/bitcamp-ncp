@@ -14,7 +14,7 @@ public class Exam0231 {
 
     // 그러나 다음과 같이 new 연산자로 만든 wrapper 객체는
     // 값이 같더라도 인스턴스가 따로 생성되기 때문에,
-    Integer obj3 = new Integer(100); // Heap에 인스턴스 생성
+    Integer obj3 = new Integer(100); // Heap에 인스턴스 생성 
     Integer obj4 = new Integer(100); // Heap에 인스턴스 생성
 
     // 다음과 같이 == 연산자를 사용하여 비교하면 안된다.

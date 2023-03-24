@@ -19,9 +19,9 @@ public class Exam0230 {
     Integer obj4 = 100; // Integer.valueOf(100);
     System.out.println(obj3 == obj4); // true
     // 설명:
-    // => 정수 값이 -128 ~ 127 범위일 경우
-    //    자주 사용되는 수이기 때문에
-    //    String 리터럴처럼 상수 풀에 Integer 객체를 생성한다.
+//     => 정수 값이 -128 ~ 127 범위일 경우
+//        자주 사용되는 수이기 때문에
+//        String 리터럴처럼 상수 풀에 Integer 객체를 생성한다.
     // => 메모리를 효율적으로 사용하기 위해
     //    같은 값을 가지는 Integer 객체가 여러 개 존재하지 않게 한다.
     // => 그래서 가능한 이 방법을 사용해야 한다.
@@ -52,9 +52,9 @@ public class Exam0230 {
     System.out.println(obj7 == obj9); // false
     System.out.println(obj8 == obj9); // false
 
-    // 따라서 이렇게 생성된 wrapper 객체의 값을 비교할 때는
-    // String 처럼 equals()로 비교하라!
-    System.out.println(obj7.equals(obj8));
+//     따라서 이렇게 생성된 wrapper 객체의 값을 비교할 때는
+//     String 처럼 equals()로 비교하라!
+    System.out.println(obj7.equals(obj8)); // 오버라이딩 됐다. => 값비교는 equals()사용
 
     // 결론!
     // - wrapper 객체의 값을 비교할 때 == 연산자를 사용하지 말라!

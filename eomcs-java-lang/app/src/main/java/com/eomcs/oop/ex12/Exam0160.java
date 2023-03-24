@@ -1,5 +1,5 @@
 // lambda 문법 : 익명 클래스를 사용할 수 있는 곳에는 모두 람다 사용 가능
-package com.eomcs.oop.ex12;
+package com.eomcs.oop.ex1
 
 public class Exam0160 {
   interface A {

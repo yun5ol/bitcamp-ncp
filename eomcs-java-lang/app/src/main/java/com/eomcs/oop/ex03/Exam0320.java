@@ -39,7 +39,7 @@ public class Exam0320 {
     s2.math = keyScan.nextInt();
 
     // 특정 인스턴스에 대해 작업을 수행할 때는 인스턴스 메서드를 호출한다.
-    s1.compute(); // s1에 들어 있는 인스턴스 주소는 compute()에 전달된다. 
+    s1.compute(); // s1에 들어 있는 인스턴스 주소는 compute()에 전달된다.
     s2.compute(); // 이번에는 s2에 들어 있는 주소를 compute()에 전달한다.
 
 

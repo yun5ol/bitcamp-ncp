@@ -1,4 +1,4 @@
-// anonymous class - 익명 클래스가 놓이는 장소: 파라미터
+// anonymous class - 익명 클래스가 놓이는 장소: 리턴
 package com.eomcs.oop.ex11.e;
 
 class My {
@@ -13,20 +13,32 @@ class My {
 
 public class Exam0450 {
   // 인터페이스의 경우 static으로 선언하지 않아도 스태틱 멤버에서 사용할 수 있다.
-  interface A {
+  interface A { // 파라미터 없고, 리턴타입 없는
     void print();
   }
 
-  static A create1() {
+  static A create0() {
     class X implements A {
       @Override
       public void print() {
-        System.out.println("Hello!");
+        System.out.println("Hello0!");
       }
     }
     return new X();
   }
 
+  // 익명 클래스 : 레퍼런스로 리턴
+  static A create1() {
+    A a = new A() {
+      @Override
+      public void print() {
+        System.out.println("Hello1!");
+      }
+    };
+    return a;
+  }
+
+  // return 자리에 정의 및 코드 삽입
   static A create2() {
     return new A() {
       @Override
@@ -36,26 +48,34 @@ public class Exam0450 {
     };
   }
 
+
+  // 람다 응용
   static A create3() {
     return () -> System.out.println("Hello3!");
   }
 
-  static A create4() {
-    return My::m1;
+
+  // 메서드 레퍼런스 활용 1
+  static A create4() { //m1은 A인터페이스와 메서드 시그니처가 같아야 한다
+    return My::m1; // static 이니 바깥 클래스명으로 접근
   }
 
-  static A create5() {
+  // 메서드 레퍼런스 활용 2
+  static A create5() { //m2도 가능하지만, 인스턴스이니 객체 생성 후 객체 주소로 가능하다
     return new My()::m2;
   }
 
   public static void main(String[] args) {
+    A obj0 = create0();
+    obj0.print();
+
     A obj1 = create1();
     obj1.print();
 
     A obj2 = create2();
     obj2.print();
 
-    A obj3 = create3();
+    A obj3 = create3(); // 람다식은 익명클래스가 아닌 수퍼클래스의 함수로 .class에 존재함
     obj3.print();
 
     A obj4 = create4();

@@ -14,7 +14,7 @@ public class Exam0710 {
 
     // 인터페이스에 정의된 메서드가
     // 생성자의 형식과 일치하다면
-    // 메서드 레퍼런스로 생성자를 지정할 수 있다.
+    // 메서드 레퍼런스로 생성자를 지정할 수 있다. 방법 3가지
     //
     // 1) 익명 클래스로 인터페이스 구현
     //    ListFactory f1 = new ListFactory() {
@@ -26,7 +26,7 @@ public class Exam0710 {
     // 2) 람다 문법으로 인터페이스 구현
     //    ListFactory f1 = () -> new ArrayList();
 
-    // 3) 메서드 레퍼런스로 인터페이스 구현 
+    // 3) 메서드 레퍼런스로 인터페이스 구현 : 위와 같은 문장이다 // new 로 생성자 호출
     ListFactory f1 = ArrayList::new;
 
     // 인터페이스의 메서드를 호출하면

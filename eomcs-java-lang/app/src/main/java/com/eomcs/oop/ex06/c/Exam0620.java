@@ -77,7 +77,7 @@ public class Exam0620 {
     new SedanFactory().makeCar().run();
     new TruckFactory().makeCar().run();
     new DumpTruckFactory().makeCar().run();
-    new DumpTruckFactory2().makeCar().run();
+    //new DumpTruckFactory2().makeCar().run();
   }
 }
 

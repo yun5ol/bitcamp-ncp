@@ -65,7 +65,7 @@ public class Exam0530 {
 
 
 
-    // 리턴 타입 int ===> short
+    // 리턴 타입 int !===> short
     //    Calculator3 c3 = MyCalculator::plus; // 컴파일 오류!
     // 위 문장은 다음과 같다.
     //    Calculator3 c3 = new Calculator3() {
@@ -93,7 +93,7 @@ public class Exam0530 {
     //    Calculator5 c5 = new Calculator5() {
     //      @Override
     //      public Object compute(int a, int b) {
-    //        return MyCalculator.plus(a, b); // OK! 
+    //        return MyCalculator.plus(a, b); // OK!
     //        //이유? plus()가 리턴한 int 값이 오토박싱 되기 때문이다.
     //      }
     //    };
@@ -110,16 +110,16 @@ public class Exam0530 {
     //    };
 
 
-    // => 메서드 레퍼런스를 지정할 때 리턴 타입의 규칙:
-    // 1) 같은 리턴 타입
-    // 2) 암시적 형변환 가능한 타입
-    // 3) auto-boxing 가능한 타입
-    // 4) void
-    // 결론,
-    // 메서드 레퍼런스가 가리키는 실제 메서드를 호출한 후
-    // 그 메서드가 리턴한 값이
-    // 인터페이스에 정의된 메서드의 리턴 값으로 사용할 수 있다면
-    // 문제가 없다.
+    //     => 메서드 레퍼런스를 지정할 때 리턴 타입의 규칙:
+    //     1) 같은 리턴 타입
+    //     2) 암시적 형변환 가능한 타입
+    //     3) auto-boxing 가능한 타입
+    //     4) void
+    //     결론,
+    //     메서드 레퍼런스가 가리키는 실제 메서드를 호출한 후
+    //     그 메서드가 리턴한 값이
+    //     인터페이스에 정의된 메서드의 리턴 값으로 사용할 수 있다면
+    //     문제가 없다.
     //
   }
 }

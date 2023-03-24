@@ -39,5 +39,42 @@ public class Exam0440 {
       }
     });
 
+
+    // test step1
+    class Y implements A {
+      @Override
+      public void print() {
+        System.out.println("하하하");
+      }
+    }
+
+    m1(new Y());
+
+    // test step2
+    A a = new A () {
+      @Override
+      public void print() {
+        System.out.println("하하하");
+      }
+    };
+
+    m1(a);
+
+    // test step3
+    m1(new A () {
+      @Override
+      public void print() {
+        System.out.println("하하하");
+      }
+    });
+
+
+    // test step4 : 람다문법 활용 : 메서드 1개짜리 인터페이스를 구현하는 경우
+    // 클래스 껍데기 지우고,
+    // 오버라이드 지우고
+    // 메서드명 지우고
+    // 화살표
+    // 문장이 한개면 중괄호, 세미콜론 생략 가능
+    m1(() -> System.out.println("하하하"));
   }
 }

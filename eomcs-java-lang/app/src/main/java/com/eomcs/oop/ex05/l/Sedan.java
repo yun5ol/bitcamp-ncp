@@ -1,7 +1,7 @@
 package com.eomcs.oop.ex05.l;
 
 public class Sedan extends Car {
-  public void run() {
+  public void run() { // 기존 메서드 재정의 => 오버라이딩
     System.out.println("쌩쌩 달린다.");
   }
 

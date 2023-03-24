@@ -34,6 +34,12 @@ public class Exam0520 {
     // 스태틱 메서드 레퍼런스로 Calculator 구현체를 만드는 방법
     //
     Calculator c01 = MyCalculator::plus;
+    //    Calculator c = new Calculator() {
+    //      @Override
+    //      public int compute(int a, int b) {
+    //        return MyCalculator.plus(a, b);
+    //      }
+    //    };
     Calculator c02 = MyCalculator::minus;
     Calculator c03 = MyCalculator::multiple;
     Calculator c04 = MyCalculator::divide;

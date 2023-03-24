@@ -2,7 +2,7 @@
 package com.eomcs.oop.ex11.b;
 
 class A {
-  static class X {
+  static class X { // 스태틱 중첩 클래스
 
   }
 }
@@ -10,11 +10,12 @@ class A {
 public class Exam0110 {
 
   public static void main(String[] args) {
+
     // 레퍼런스 선언
-    A.X obj;
+    A.X obj; // 클래스이름.중첩클래스이름
 
     // 인스턴스 생성
-    obj = new A.X();
+    obj = new A.X(); // 클래스이름.중첩클래스이름
   }
 
 }

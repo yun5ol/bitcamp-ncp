@@ -26,17 +26,27 @@ public class Exam0510 {
       }
     };
 
-    // 2) 람바 문법 활용
+    // 2) 람바 문법 활용 : 추상 메서드 1개인 functional interface
     Calculator obj2 = (x, y) -> x * y;
 
-    // 3) 기존에 작성한 클래스의 스태틱 메서드를 재활용하기
-    // => 인터페이스의 메서드 규격과 일치하는 메서드가 있다면,
-    //    그 메서드를 람다 구현체로 대체할 수 있다.
-    // => 새로 코드를 작성할 필요가 없어 매우 편리하다.
-    // => 규격? 메서드의 파라미터 타입/개수/순서, 리턴 타입
-    // => 문법:
-    //    클래스명::메서드명
-    Calculator c1 = MyCalculator::plus;
+    //     3) 기존에 작성한 클래스의 스태틱 메서드를 재활용하기
+    //     => 인터페이스의 메서드 규격과 일치하는 메서드가 있다면,
+    //        그 메서드를 람다 구현체로 대체할 수 있다.
+    //     => 새로 코드를 작성할 필요가 없어 매우 편리하다.
+    //     => 규격? 메서드의 파라미터 타입/개수/순서, 리턴 타입
+    //     => 문법:
+    //        클래스명::메서드명
+    // calculator 구현체를 만드는데, calculator 인터페이스(MyCalculator)의 static메서드와 규격이 일치한다면,
+    // 해당 메서드를 람다 구현체로 대체할 수 있다.
+    Calculator c1 = MyCalculator::plus; // MyCalculator의 스태틱 메서드인 plus()를 가지고 구현체를 자동 생성
+    // 위 문법이 없다면 아래와 같이 직접 작성해야 한다.
+    //    Calculator c = new Calculator() {
+    //      @Override
+    //      public int compute(int x, int y) {
+    //        return MyCalculator.plus(x, y);
+    //      }
+    //    }
+
     Calculator c2 = MyCalculator::minus;
     Calculator c3 = MyCalculator::multiple;
     Calculator c4 = MyCalculator::divide;

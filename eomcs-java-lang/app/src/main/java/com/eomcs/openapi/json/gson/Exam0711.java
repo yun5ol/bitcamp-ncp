@@ -1,4 +1,4 @@
-// 맵객체 --> JSON 문자열 
+// 맵객체 --> JSON 문자열
 package com.eomcs.openapi.json.gson;
 
 import java.sql.Date;
@@ -20,7 +20,7 @@ public class Exam0711 {
     HashMap<String,String> params = new HashMap<>();
     params.put("no", String.valueOf(100));
     params.put("title", "Hello");
-    params.put("manager", new Gson().toJson(mgr));
+    params.put("manager", new Gson().toJson(mgr)); // 비추
 
     String jsonStr = new Gson().toJson(params);
 

@@ -4,7 +4,7 @@ package com.eomcs.basic.ex02;
 public class Exam0121 {
   public static void main(String[] args) {
 
-    String s1 = new String("Hello");
+    String s1 = new String("Hello"); // new니깐 일단 주소(인스턴스) 달라
     String s2 = new String("HELLO");
 
     // equals()는 대소문자를 구분한다.

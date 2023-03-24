@@ -18,7 +18,7 @@ public class Exam0411 {
       //
       @Override
       public double compute(int money) {
-        return money + (money * rate / 100);
+        return money + (money * rate / 100); // 중요!!!! 여기서 rate는 컴파일러가 생성한 필드를 가리킨다. 바깥 메서드의 파라미터가 아니다.
       }
     }
     // 또한 개발자는 메서드의 로컬 변수 값을

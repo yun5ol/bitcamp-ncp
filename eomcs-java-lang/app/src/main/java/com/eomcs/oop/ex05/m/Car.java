@@ -27,7 +27,7 @@ package com.eomcs.oop.ex05.m;
 // => 문법:
 //      abstract class 클래스명 {...}
 //
-public abstract class Car {
+public class Car {
 
   public Car() {
     super();

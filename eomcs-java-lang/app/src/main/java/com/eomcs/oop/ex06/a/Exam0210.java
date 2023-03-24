@@ -29,7 +29,7 @@ public class Exam0210 {
     ((Sedan)c).auto = true;    // OK!
 
     // => 또는 인스턴스의 원래 클래스 레퍼런스에 저장한 다음에 사용.
-    Sedan s = (Sedan)c;
+    Sedan s = (Sedan)c; // 매번 형변 할 바에 한번으로 하자는 예시
     s.sunroof = true;
     s.auto = true;
 

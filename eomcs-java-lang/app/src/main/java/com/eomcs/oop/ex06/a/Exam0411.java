@@ -4,6 +4,7 @@ package com.eomcs.oop.ex06.a;
 public class Exam0411 {
 
   // Sedan과 Truck의 모델명과 cc를 출력하라!
+  // 트럭 메서드도 추가 생성해줘야.
 
   public static void printSedan(Sedan sedan) {
     System.out.printf("모델명: %s\n", sedan.model);

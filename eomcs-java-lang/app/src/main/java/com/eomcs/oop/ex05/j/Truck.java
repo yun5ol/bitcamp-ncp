@@ -5,7 +5,7 @@ package com.eomcs.oop.ex05.j;
 //
 
 public class Truck extends Car {
-  @Override
+  @Override // 메서드 재정의
   public void run() {
     System.out.println("덜컹 덜컹 달린다.");
   }

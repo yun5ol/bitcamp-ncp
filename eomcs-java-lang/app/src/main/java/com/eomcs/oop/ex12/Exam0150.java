@@ -1,4 +1,4 @@
-// Lambda 문법 - 람다 리턴
+// Lambda 문법 - 람다 리턴문에 적용
 package com.eomcs.oop.ex12;
 
 public class Exam0150 {
