@@ -8,7 +8,11 @@ public class Exam0412 {
   // 다형적 변수를 사용하게 되면 동일한 코드를 갖고 있는 메서드를
   // 한 개의 메서드로 통합할 수 있다.
   // => 즉 Sedan 객체와 Truck 객체를 모두 가리킬 수 있는
+<<<<<<< HEAD
   //    ---------상위 클래스의 레퍼런스를 선언하면 된다.----------
+=======
+  //    상위 클래스의 레퍼런스를 선언하면 된다.
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
   //
   public static void printCar(Car car) {
     System.out.printf("모델명: %s\n", car.model);

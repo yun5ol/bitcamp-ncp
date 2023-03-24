@@ -4,7 +4,11 @@ package com.eomcs.basic.ex02;
 public class Exam0121 {
   public static void main(String[] args) {
 
+<<<<<<< HEAD
     String s1 = new String("Hello"); // new니깐 일단 주소(인스턴스) 달라
+=======
+    String s1 = new String("Hello");
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     String s2 = new String("HELLO");
 
     // equals()는 대소문자를 구분한다.

@@ -3,8 +3,13 @@ package com.eomcs.exception.ex3;
 
 public class Exam0212 {
 
+<<<<<<< HEAD
 //   Exception 계열의 예외를 던질 경우,
 //   반드시 메서드 선언부에 어떤 예외를 던지는지 지정해야 한다.
+=======
+  // Exception 계열의 예외를 던질 경우,
+  // 반드시 메서드 선언부에 어떤 예외를 던지는지 지정해야 한다.
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
   // => 보통 개발자가 애플리케이션을 작성하면서
   //    예외를 던질 경우 이 클래스(및 하위 클래스)를 사용한다.
   static void m1() throws Exception {

@@ -31,7 +31,10 @@ public class Exam0120 {
     @Override
     public void rule3() {System.out.println("rule3()");}
 
+<<<<<<< HEAD
     // 별도 생성
+=======
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     public void m1() {System.out.println("m1()");}
   }
 

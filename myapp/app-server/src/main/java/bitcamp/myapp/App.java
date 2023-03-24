@@ -1,13 +1,22 @@
 package bitcamp.myapp;
 
+<<<<<<< HEAD
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+=======
+import java.util.logging.LogManager;
+
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+<<<<<<< HEAD
+=======
+
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 import bitcamp.myapp.web.interceptor.AdminCheckInterceptor;
 import bitcamp.myapp.web.interceptor.AuthInterceptor;
 

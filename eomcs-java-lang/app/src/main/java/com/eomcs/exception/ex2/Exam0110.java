@@ -11,6 +11,7 @@ public class Exam0110 {
     // 예외 정보를 던지는 방식으로 호출자에게 알린다.
     try {
       // 예외를 던질 수도 있는 메서드를 호출할 때는 try 블록 안에서 호출한다.
+<<<<<<< HEAD
       // 예외가 발생하면 리턴값으로 받는게 아니라, catch 블럭으로 따로 받는다.
       int result = Calculator3.compute(op, a, b);
       System.out.println(result);
@@ -18,6 +19,14 @@ public class Exam0110 {
     } catch (Throwable e) {
       // try 블록 안에서 메서드를 호출하다가 예외가 발생하면
       // catch 블록에서 예외 객체를 파라미터로 받는다.
+=======
+      int result = Calculator3.compute(op, a, b);
+      System.out.println(result);
+
+    } catch (RuntimeException e) {
+      // try 블록 안에서 메서드를 호출하다가 예외가 발생하면
+      // catch 블록에서 파라미터로 받는다.
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
       System.out.println(e.getMessage());
     }
   }

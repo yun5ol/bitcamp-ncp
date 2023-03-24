@@ -32,7 +32,10 @@ public class Exam0510 {
     members.add(m2);
     members.add(m3);
 
+<<<<<<< HEAD
     // project에서 member, members의arraylist를 사용
+=======
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     Project p = new Project();
     p.setNo(11);
     p.setTitle("제목");
@@ -55,5 +58,8 @@ public class Exam0510 {
 //    프로퍼티명 : [{...},{...},{...},...],
 //    ...
 // }
+<<<<<<< HEAD
 // 빈 arraylist는 []
+=======
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 //

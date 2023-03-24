@@ -13,14 +13,26 @@ public class Exam0410 {
   static Interest getInterest(final double rate) {
     // 로컬 클래스로 인터페이스 구현한 후 객체 리턴하기
     class InterestImpl implements Interest {
+<<<<<<< HEAD
 
+=======
+      double rate;
+
+      public InterestImpl(double rate) {
+        this.rate = rate;
+      }
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 
       @Override
       public double compute(int money) {
         return money + (money * rate / 100);
       }
     }
+<<<<<<< HEAD
     return new InterestImpl();
+=======
+    return new InterestImpl(rate);
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
   }
 
   public static void main(String[] args) {

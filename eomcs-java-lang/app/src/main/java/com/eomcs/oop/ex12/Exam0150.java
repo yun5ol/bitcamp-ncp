@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // Lambda 문법 - 람다 리턴문에 적용
+=======
+// Lambda 문법 - 람다 리턴
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 package com.eomcs.oop.ex12;
 
 public class Exam0150 {

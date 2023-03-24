@@ -12,7 +12,11 @@ public class Exam0120 {
     // 2) JSON 처리 객체 준비
     ObjectMapper mapper = new ObjectMapper();
 
+<<<<<<< HEAD
     // 3) JSON 문자열을 가지고 객체 만들기 //  readValue
+=======
+    // 3) JSON 문자열을 가지고 객체 만들기
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     Member m = mapper.readValue(jsonStr, Member.class);
 
     System.out.println(m);

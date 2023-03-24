@@ -15,7 +15,10 @@ public class Exam0121 {
     public String toString() {
       return "My [name=" + name + ", age=" + age + "]";
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
   }
 
   public static void main(String[] args) {

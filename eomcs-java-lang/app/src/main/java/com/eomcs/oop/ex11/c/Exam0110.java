@@ -4,6 +4,7 @@ package com.eomcs.oop.ex11.c;
 class X {} // Top Level Class
 
 class A {
+<<<<<<< HEAD
   static void m1() {}
   //static 메서드는 A의 인스턴스를 저장하는 this 라는 내장변수가 없다.
 
@@ -16,13 +17,25 @@ class A {
     // final synthetic com.eomcs.oop.ex11.c.A this$0;
     // - 바깥 클래스의 인스턴스의 주소를 파라미터로 받는 생성자를 만든다.
     // A$X(com.eomcs.oop.ex11.c.A arg0);
+=======
+
+  class X { // inner class
+    // 컴파일러는 inner 클래스를 컴파일 할 때 다음과 같이 
+    // - 바깥 클래스의 인스턴스 주소를 저장할 필드를 추가하고,
+    // - 바깥 클래스의 인스턴스의 주소를 파라미터로 받는 생성자를 만든다.
+    //
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     //    A outer;
     //    public X(A obj) {
     //      this.outer = obj;
     //    }
   }
 
+<<<<<<< HEAD
   static class Y {} // 스태틱중첩클래스
+=======
+  static class Y {}
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 
 }
 
@@ -30,6 +43,7 @@ public class Exam0110 {
 
   public static void main(String[] args) {
     // 레퍼런스 선언
+<<<<<<< HEAD
     A.X obj; // 바깥클래스명.중첩클래스명
     A.Y obj2;
 
@@ -39,10 +53,19 @@ public class Exam0110 {
 
     A.m1(); // 스태틱 멤버를 사용할 때는 인스턴스가 없어도 된다.
     // A.m2(); // 인스턴스 멤버를 사용하려면 반드시 해당 객체가 있어야 한다.
+=======
+    A.X obj;
+    A.Y obj2;
+
+    // 인스턴스 생성
+    //    obj = new A.X(); // 컴파일 오류! 바깥 클래스의 인스턴스 주소 없이 생성 불가!
+    obj2 = new A.Y();
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 
     //1) 바깥 클래스의 인스턴스 준비
     A  outer = new A();
 
+<<<<<<< HEAD
     // non-static 메서드를 호출하려면 인스턴스 주소가 필요하듯이,
     outer.m2();
 
@@ -50,6 +73,12 @@ public class Exam0110 {
     obj = outer.new X();
 
     // 컴파일러는 컴파일 할 때 다음과 같이
+=======
+    //2) 바깥 클래스의 인스턴스 주소를 사용하여 inner class의 인스턴스 생성
+    obj = outer.new X();
+
+    // 컴파일러는 컴파일 할 때 다음과 같이 
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     // - 바깥 클래스의 객체를 생성자에 전달하는 코드로 변경한다.
     //    obj = new A.X(outer);
 

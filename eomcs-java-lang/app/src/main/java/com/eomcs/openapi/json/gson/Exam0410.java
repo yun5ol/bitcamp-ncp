@@ -21,7 +21,11 @@ public class Exam0410 {
     b.setNo(1);
     b.setTitle("제목");
     b.setContent("내용");
+<<<<<<< HEAD
     b.setWriter(m); // 보드객체에서 멤버객체의 인스턴스를 포함하는 중
+=======
+    b.setWriter(m);
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     b.setViewCount(98);
     b.setLike(5);
     b.setRegisteredDate(new Date(System.currentTimeMillis()));

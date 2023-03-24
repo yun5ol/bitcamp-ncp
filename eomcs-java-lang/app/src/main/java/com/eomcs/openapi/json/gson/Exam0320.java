@@ -3,8 +3,13 @@ package com.eomcs.openapi.json.gson;
 
 import java.lang.reflect.Type;
 import java.util.Collection;
+<<<<<<< HEAD
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
+=======
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 
 public class Exam0320 {
   public static void main(String[] args) {
@@ -14,13 +19,21 @@ public class Exam0320 {
     // 1) TypeToken 클래스의 서브 클래스를 만든다.
     class MyTypeToken extends TypeToken<Collection<Member>> {
       // 수퍼 클래스를 지정할 때 제네릭의 타입을 설정한다.
+<<<<<<< HEAD
       // TypeToken 클래스에는 Type 인터페이스의 구현체를 만드는 메서드가 있기 때문에
+=======
+      // TypeToken 클래스에는 Type 인터페이스의 구현체를 만드는 메서드가 있기 때문에 
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
       // 이 클래스의 서브 클래스를 만드는 것이다.
       // 타입 파라미터에 컬렉션 타입을 전달하는 목적 이외에는 다른 이유가 없다.
       // 그래서 서브 클래스에 뭔가를 추가할 필요가 없다.
     }
 
+<<<<<<< HEAD
     // 2) TypeToken 객체 준비
+=======
+    // 2) TypeToken 객체 준비 
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     MyTypeToken typeToken = new MyTypeToken();
 
     // 3) TypeToken 객체를 통해 Type 구현체를 얻는다.
@@ -28,7 +41,10 @@ public class Exam0320 {
 
     // 4) Type 객체에 저장된 정보를 바탕으로 JSON 문자열로부터 컬렉션 객체를 만든다.
     Collection<Member> list = new Gson().fromJson(jsonStr, collectionType);
+<<<<<<< HEAD
     // 위는 예전방식 > myapp 실습이 최신형
+=======
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 
     for (Member m : list) {
       System.out.println(m);

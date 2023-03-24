@@ -14,6 +14,12 @@ public class Exam0620 {
     //
     static {
       System.out.println("Static{} 11111");
+<<<<<<< HEAD
+=======
+    }
+
+    static {
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
       System.out.println("Static{} 22222");
     }
   }

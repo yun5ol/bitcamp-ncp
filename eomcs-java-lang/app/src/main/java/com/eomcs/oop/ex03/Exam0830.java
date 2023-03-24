@@ -28,7 +28,11 @@ public class Exam0830 {
       // a = 100;
       // b = 200;
 
+<<<<<<< HEAD
       this.a = a; // 111
+=======
+      this.a = a;
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
       c = 300;
     }
 
@@ -38,8 +42,13 @@ public class Exam0830 {
       // a = 100;
       // b = 200;
 
+<<<<<<< HEAD
       this.a = a; // 111
       this.b = b; // 222
+=======
+      this.a = a;
+      this.b = b;
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
       c = 300;
     }
   }

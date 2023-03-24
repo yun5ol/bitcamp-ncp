@@ -19,9 +19,14 @@ public class Exam0520 {
 
   public static void main(String[] args) throws Exception {
     try {
+<<<<<<< HEAD
       System.out.println("try");
       m(0);
       System.out.println("try 블록 실행 완료"); 
+=======
+      m(0);
+      System.out.println("try");
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
       // m()에서 발생된 예외는
       // try 블록에서 받지 않는다.
       // 따라서 main() 호출자에게 위임한다.

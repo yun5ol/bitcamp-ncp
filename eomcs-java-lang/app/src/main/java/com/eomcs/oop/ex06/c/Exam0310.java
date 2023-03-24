@@ -36,7 +36,11 @@ public class Exam0310 {
     // - C의 m1()은 private이기 때문에 오직 C에서만 사용할 수 있다.
     // - C2에서 접근할 수 없다. 접근할 수 없으니, 오버라이딩은 불가능하다!
     //
+<<<<<<< HEAD
 //        @Override
+=======
+    //    @Override
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     private void m1() {} // 컴파일 오류!
 
     // 어? 강사님! @Override 빼니까 m1() 정의할 수 있는데요?

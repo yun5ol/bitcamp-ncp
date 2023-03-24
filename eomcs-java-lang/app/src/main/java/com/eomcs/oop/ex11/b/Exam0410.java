@@ -23,7 +23,11 @@ public class Exam0410 {
     D.m1();
     D.X obj = new D.X();
 
+<<<<<<< HEAD
     // 다른 패키지 클래스 // import 먼저
+=======
+    // 다른 패키지 클래스
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     M.v2 = 200;
     M.m2();
     M.Y obj2 = new M.Y();

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // 맵객체 --> JSON 문자열
+=======
+// 맵객체 --> JSON 문자열 
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 package com.eomcs.openapi.json.gson;
 
 import java.sql.Date;
@@ -20,7 +24,11 @@ public class Exam0711 {
     HashMap<String,String> params = new HashMap<>();
     params.put("no", String.valueOf(100));
     params.put("title", "Hello");
+<<<<<<< HEAD
     params.put("manager", new Gson().toJson(mgr)); // 비추
+=======
+    params.put("manager", new Gson().toJson(mgr));
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 
     String jsonStr = new Gson().toJson(params);
 

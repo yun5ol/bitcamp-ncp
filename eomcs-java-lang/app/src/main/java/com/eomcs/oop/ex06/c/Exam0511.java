@@ -34,10 +34,13 @@ public class Exam0511 {
     void m1() {
       System.out.println("X4의 m1()");
     }
+<<<<<<< HEAD
     
     void x() {
       System.out.println("X4의 x()");
     }
+=======
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
   }
 
   public static void main(String[] args) {
@@ -49,8 +52,13 @@ public class Exam0511 {
     // 실제 레퍼런스가 가리키는 클래스에서 메서드를 찾아 올라간다.
     //
     ((X3)x4).m1();   // X4.m1()
+<<<<<<< HEAD
     ((X3)x4).m2();   // X3.m2()
     //((X3)x4).x();    // 컴파일오류
+=======
+    ((X2)x4).m1();   // X4.m1()
+    ((X)x4).m1();    // X4.m1();
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 
     X3 x3 = x4;
     X2 x2 = x4;

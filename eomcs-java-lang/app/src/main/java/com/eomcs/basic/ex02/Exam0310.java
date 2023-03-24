@@ -17,7 +17,11 @@ public class Exam0310 {
     Date d3 = new Date(System.currentTimeMillis());
     System.out.println(d3);
 
+<<<<<<< HEAD
     Date d4 = new Date(121, 0, 15); // 1900년 기준
+=======
+    Date d4 = new Date(121, 0, 15);
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     System.out.println(d4);
 
     // java.sql.Date

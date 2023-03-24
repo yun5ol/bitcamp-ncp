@@ -7,8 +7,13 @@ import java.util.Scanner;
 public class Exam0120 {
   //
   // read() 메서드에서 발생할 수 있는 예외:
+<<<<<<< HEAD
 //      Integer.parseInt() => NumberFormatException 이 발생할 수 있다.
 //      Data.valueOf() => IllegalArgumentException 이 발생할 수 있다.
+=======
+  //    Integer.parseInt() => NumberFormatException 이 발생할 수 있다.
+  //    Data.valueOf() => IllegalArgumentException 이 발생할 수 있다.
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
   // 
   // 위 두 개의 예외 모두 RuntimeException 계열의 예외이기 때문에
   // 메서드 선언부에 throws 문장을 표시할 필요가 없다. 

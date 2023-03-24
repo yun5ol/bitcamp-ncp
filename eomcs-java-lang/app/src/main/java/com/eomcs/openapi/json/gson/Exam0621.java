@@ -3,7 +3,10 @@ package com.eomcs.openapi.json.gson;
 
 import java.lang.reflect.Type;
 import java.util.Collection;
+<<<<<<< HEAD
 import com.google.common.reflect.TypeToken;
+=======
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonDeserializationContext;
@@ -11,6 +14,10 @@ import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
+<<<<<<< HEAD
+=======
+import com.google.gson.reflect.TypeToken;
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 
 public class Exam0621 {
   public static void main(String[] args) {
@@ -42,7 +49,10 @@ public class Exam0621 {
 
     // 공장을 통해 Gson 객체를 준비한다.
     Gson gson = gsonBuilder.create();
+<<<<<<< HEAD
     // 622에서는 어댑터를 생성할 예정
+=======
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 
     // Gson 객체가 JSON 데이터를 가지고 객체를 생성할 때 알아야 하는 객체 타입 정보 준비
     Type collectionType = TypeToken.getParameterized(Collection.class, Member.class).getType();

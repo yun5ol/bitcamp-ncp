@@ -25,7 +25,11 @@ public class Exam0410 {
 
     // printSedan()의 파라미터는 Sedan 객체의 주소만 받을 수 있다.
     // 그래서 Truck 객체를 전달할 수 없다.
+<<<<<<< HEAD
 //        printSedan(truck); // 컴파일 오류! // 트럭은 형제잖아 ㅇㅅㅇ
+=======
+    //    printSedan(truck); // 컴파일 오류!
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 
     // Truck 인스턴스에서 model과 cc 값을 꺼내서 출력할 메서드를
     // 따로 만들어야 한다.

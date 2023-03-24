@@ -21,6 +21,7 @@ public class Exam0130 {
     // - 필드 오버라이딩은 메서드와 달리 변수의 타입이 달라도 된다.
     //
     String working;
+<<<<<<< HEAD
     
     void print2() {
       System.out.println("A4.print2():");
@@ -28,6 +29,8 @@ public class Exam0130 {
       System.out.printf("  => this.tel(%s)\n", this.tel);
       System.out.printf("  => this.working(%s)\n", this.working);
     }
+=======
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
   }
 
 
@@ -44,9 +47,13 @@ public class Exam0130 {
     // - 필드 오버라이딩은 그냥 새 필드를 추가한 것과 같다.
     // - 가능한 수퍼 클래스의 필드와 같은 이름을 가진 필드를 만들지 말라!
 
+<<<<<<< HEAD
     
     System.out.println("---");
 
     obj.print2();
+=======
+
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
   }
 }

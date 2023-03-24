@@ -8,7 +8,11 @@
  */
 
 rootProject.name = 'myapp'
+<<<<<<< HEAD
 // include('app')
 // include('app-common')
 // include('app-client')
 include('app-server')
+=======
+include('app')
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805

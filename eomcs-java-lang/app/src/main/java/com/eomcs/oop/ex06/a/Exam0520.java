@@ -28,7 +28,11 @@ public class Exam0520 {
       System.out.printf("cc: %d\n", car.cc);
       System.out.printf("밸브: %d\n", car.valve);
 
+<<<<<<< HEAD
       if (v instanceof Sedan) { // 이거 하기 싫으면 매번 형변환
+=======
+      if (v instanceof Sedan) {
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
         Sedan sedan = (Sedan) v;
         System.out.println("[승용차 기본정보]");
         System.out.printf("썬루프: %b\n", sedan.sunroof);

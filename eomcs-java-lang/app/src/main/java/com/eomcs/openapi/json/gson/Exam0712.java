@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // 맵객체 --> JSON 문자열
+=======
+// 맵객체 --> JSON 문자열 
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 package com.eomcs.openapi.json.gson;
 
 import java.sql.Date;
@@ -16,7 +20,11 @@ public class Exam0712 {
     mgr.setPosition("대리");
     mgr.setFax("02-1111-2222");
 
+<<<<<<< HEAD
     ManagerParam param = new ManagerParam(); // GSON은 필드가 없을 경우, 자동 세터/게터로 간주
+=======
+    ManagerParam param = new ManagerParam();
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     param.no = 100;
     param.title = "Hello";
     param.manager = mgr;

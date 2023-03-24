@@ -3,24 +3,38 @@ package com.eomcs.oop.ex11.d;
 
 class D {
 
+<<<<<<< HEAD
   void m1() { // 310과 차이 : 인스턴스 메서드 안의 로컬클래스
+=======
+  void m1() {
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     int a = 100;
     int b = 200;
 
     class X {
+<<<<<<< HEAD
       // 로컬 클래스에서 바깥 메서드(m1())의 로컬 변수(a,b) 값을 사용한다면
+=======
+      // 로컬 클래스에서 바깥 메서드(m1())의 로컬 변수(a,b) 값을 사용한다면 
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
       // 1) 다음과 같이 컴파일 할 때 그 값을 저장할 필드(a)를 자동으로 추가한다.
       //    => 사용하는 변수에 대해서만 필드를 생성한다.
       //    => 로컬 변수 b는 사용하지 않기 때문에 b 값을 받을 필드는 생성하지 않는다.
       //      int a;
       //      D outer;
+<<<<<<< HEAD
       //
       // 2) 또한 로컬 클래스의 객체를 생성할 때 그 값을 사용할 수 있도록
+=======
+      // 
+      // 2) 또한 로컬 클래스의 객체를 생성할 때 그 값을 사용할 수 있도록 
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
       //    생성자에 파라미터를 추가한다.
       //      public X(D outer, int a) {
       //        this.a = a;
       //        this.outer = outer;
       //      }
+<<<<<<< HEAD
       //
       // .class 파일의 코드:
       //      class com.eomcs.oop.ex11.d.D$1X {
@@ -29,17 +43,35 @@ class D {
       //
       //        private final synthetic int val$a;
       //
+=======
+      // 
+      // .class 파일의 코드:
+      //      class com.eomcs.oop.ex11.d.D$1X {
+      //        
+      //        final synthetic com.eomcs.oop.ex11.d.D this$0;
+      //        
+      //        private final synthetic int val$a;
+      //        
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
       //        D$1X(com.eomcs.oop.ex11.d.D arg0, int arg1);
       //        ...
       //
       void f1() {
+<<<<<<< HEAD
         // 그래서 다음과 같이
+=======
+        // 그래서 다음과 같이 
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
         // 로컬 클래스에서는 바깥 메서드의 로컬 변수를 자기것인양 사용할 수 있는 것이다.
         System.out.println(a); // m1() 에 선언된 로컬 변수를 가리킨다.
       }
     }
 
+<<<<<<< HEAD
     X obj = new X(); // (this, a);
+=======
+    X obj = new X();
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     obj.f1();
   }
 
@@ -48,6 +80,7 @@ class D {
     int b = 200;
 
     // 스태틱 메서드의 로컬 클래스도 인스턴스 메서드의 로컬 클래스와 같다.
+<<<<<<< HEAD
     // 단, 스태틱이기 때문에 바깥 클래스의 인스턴스 주소를 받는 필드는
     // 자동으로 생성되지 않는다.
     //
@@ -56,6 +89,16 @@ class D {
     //
     //      private final synthetic int val$b;
     //
+=======
+    // 단, 스태틱이기 때문에 바깥 클래스의 인스턴스 주소를 받는 필드는 
+    // 자동으로 생성되지 않는다.
+    // 
+    // .class 파일의 코드:
+    //    class com.eomcs.oop.ex11.d.D$2X {
+    //      
+    //      private final synthetic int val$b;
+    //      
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     //      D$2X(int arg0);
     //      ..
     class X {

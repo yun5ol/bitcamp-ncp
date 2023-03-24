@@ -19,8 +19,13 @@ public class Exam0510 {
 
   public static void main(String[] args) {
     try {
+<<<<<<< HEAD
       System.out.println("try");
       m(4);
+=======
+      m(4);
+      System.out.println("try");
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
       return; 
     } catch (RuntimeException | SQLException | IOException e) {
       System.out.println("catch 1");
@@ -29,9 +34,15 @@ public class Exam0510 {
       System.out.println("catch 2");
 
     } finally {
+<<<<<<< HEAD
 //       정상적으로 실행하든, 아니면 예외가 발생하여 catch 블록을 실행하든
 //       finally 블록은 무조건 실행한다.
 //       즉 try ~ catch ~ 블록을 나가기 전에 반드시 실행한다.
+=======
+      // 정상적으로 실행하든, 아니면 예외가 발생하여 catch 블록을 실행하든
+      // finally 블록은 무조건 실행한다.
+      // 즉 try ~ catch ~ 블록을 나가기 전에 반드시 실행한다.
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
       // 그래서 이 블록에는
       // try 에서 사용한 자원을 해제시키는 코드를 주로 둔다.
       // => 자원 해제 코드를 둔다.
@@ -39,8 +50,11 @@ public class Exam0510 {
       //
       System.out.println("finally");
     }
+<<<<<<< HEAD
     
     System.out.println("안녕히가세요");
+=======
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
   }
 
 }

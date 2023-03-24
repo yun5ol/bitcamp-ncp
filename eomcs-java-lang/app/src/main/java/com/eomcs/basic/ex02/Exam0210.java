@@ -15,6 +15,7 @@ public class Exam0210 {
     Boolean bool = new Boolean(true);           // ==> boolean
     Character c = new Character((char)0x41);    // ==> char
 
+<<<<<<< HEAD
 //     이렇게 primitive data type에 대응하여 만든 클래스를
 //     primitive data를 포장하는 객체라고 해서
 //     "랩퍼(wrapper) 클래스"라 부른다.
@@ -23,6 +24,16 @@ public class Exam0210 {
 //     => primitive data type의 값을 객체로 주고 받을 때 사용한다.
 //     => primitive data type의 값을 객체에 담아 전달하고 싶다면
 //        언제든 wrapper 클래스의 인스턴스를 만들면 된다.
+=======
+    // 이렇게 primitive data type에 대응하여 만든 클래스를
+    // primitive data를 포장하는 객체라고 해서
+    // "랩퍼(wrapper) 클래스"라 부른다.
+
+    // 래퍼 클래스의 주요 용도:
+    // => primitive data type의 값을 객체로 주고 받을 때 사용한다.
+    // => primitive data type의 값을 객체에 담아 전달하고 싶다면
+    //    언제든 wrapper 클래스의 인스턴스를 만들면 된다.
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     //
     // Java 9 부터 wrapper 클래스의 생성자가 deprecated 상태이다.
     // 가능한 생성자를 사용하여 인스턴스를 생성하지 말라!

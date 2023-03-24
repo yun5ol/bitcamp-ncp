@@ -4,11 +4,19 @@ package com.eomcs.basic.ex02;
 public class Exam0212 {
   public static void main(String[] args) {
 
+<<<<<<< HEAD
     Long obj1 = Long.valueOf(100L); // 포장할 땐 
     Double obj2 = Double.valueOf(3.14);
     Boolean obj3 = Boolean.valueOf(true);
 
     long l = obj1.longValue(); // 
+=======
+    Long obj1 = Long.valueOf(100L);
+    Double obj2 = Double.valueOf(3.14);
+    Boolean obj3 = Boolean.valueOf(true);
+
+    long l = obj1.longValue();
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     double d = obj2.doubleValue();
     boolean bool = obj3.booleanValue();
 

@@ -6,11 +6,15 @@ import com.google.gson.Gson;
 public class Exam0420 {
   public static void main(String[] args) {
 
+<<<<<<< HEAD
     String jsonStr = "{\"no\":1,\"title\":\"제목\",\"content\":\"내용\","
         + "\"writer\":{\"no\":100,\"name\":\"홍길동\",\"email\":\"hong@test.com\","
         + "\"password\":\"1111\",\"photo\":\"hong.gif\",\"tel\":\"010-2222-1111\","
         + "\"registeredDate\":\"9월 16, 2021\"},\"registeredDate\":\"9월 16, 2021\","
         + "\"viewCount\":98,\"like\":5}";
+=======
+    String jsonStr = "{\"no\":1,\"title\":\"제목\",\"content\":\"내용\",\"writer\":{\"no\":100,\"name\":\"홍길동\",\"email\":\"hong@test.com\",\"password\":\"1111\",\"photo\":\"hong.gif\",\"tel\":\"010-2222-1111\",\"registeredDate\":\"9월 16, 2021\"},\"registeredDate\":\"9월 16, 2021\",\"viewCount\":98,\"like\":5}";
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
 
     Board b = new Gson().fromJson(jsonStr, Board.class);
 

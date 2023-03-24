@@ -8,7 +8,11 @@ public class Exam0160 {
 
   public static void main(String[] args) {
     My obj1 = new My();
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     // 레퍼런스를 통해서 인스턴스의 클래스 정보를 알아낼 수 있다.
     Class classInfo = obj1.getClass();
 

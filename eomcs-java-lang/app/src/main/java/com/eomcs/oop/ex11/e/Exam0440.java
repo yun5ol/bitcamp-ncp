@@ -39,6 +39,7 @@ public class Exam0440 {
       }
     });
 
+<<<<<<< HEAD
 
     // test step1
     class Y implements A {
@@ -76,5 +77,7 @@ public class Exam0440 {
     // 화살표
     // 문장이 한개면 중괄호, 세미콜론 생략 가능
     m1(() -> System.out.println("하하하"));
+=======
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
   }
 }

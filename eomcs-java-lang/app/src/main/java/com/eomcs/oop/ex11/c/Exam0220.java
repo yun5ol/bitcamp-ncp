@@ -26,9 +26,15 @@ class B2 {
       // 그래서 자바는 inner 객체에 보관된 바깥 객체를 가리키는 문법을 제공하고 있다.
       // =>   바깥클래스명.this
       // 위의 문법을 이용하여 바깥 객체에 접근할 수 있다.
+<<<<<<< HEAD
       // 즉 inner 객체를 만들 때 사용한 바깥 객체에 접근하고 싶다면
       // =>  B2.this  문법을 사용하라!
       //
+=======
+      // 즉 inner 객체를 만들 때 사용한 바깥 객체에 접근하고 싶다면 
+      // =>  B2.this  문법을 사용하라!
+      // 
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
       System.out.println(B2.this.v2); // ---> this$0.v2
       B2.this.m2();
     }
@@ -47,7 +53,10 @@ public class Exam0220 {
     outer2.v2 = 200;
     outer2.m2();
 
+<<<<<<< HEAD
     System.out.println("-------------------------------");
+=======
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     // inner 객체 생성
     B2.X inner = outer.new X(); // --> new X(outer)
     B2.X inner2 = outer2.new X(); // --> new X(outer2)
@@ -55,8 +64,13 @@ public class Exam0220 {
     inner.test();
     inner2.test();
 
+<<<<<<< HEAD
     B2 outer3 = null; // outer3, inner3 : 없는 주소로 접근할 수 없다
     B2.X inner3 = outer3.new X();
+=======
+    B2 outer3 = null;
+    B2.X inner3 = outer3.new X(); 
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
   }
 
 }

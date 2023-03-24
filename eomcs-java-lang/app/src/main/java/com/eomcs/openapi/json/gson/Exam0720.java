@@ -7,6 +7,7 @@ import com.google.gson.Gson;
 public class Exam0720 {
   public static void main(String[] args) {
 
+<<<<<<< HEAD
     String jsonStr = "{\"no\":100,\"manager\":{\"position\":\"대리\",\"fax\":\"02-1111-2222\",\"no\":101,\"name\":\"홍길동\",\"email\":\"hong@test.com\",\"registeredDate\":\"10월 5, 2021\"},\"title\":\"Hello\"}";
 
     Map<String,Object> map = new Gson().fromJson(jsonStr, Map.class);
@@ -17,6 +18,17 @@ public class Exam0720 {
     Object v3 = map.get("manager");
 
     System.out.println(v1.getClass().getName());
+=======
+    String jsonStr = "{\"no\":\"100\",\"manager\":{\"position\":\"대리\",\"fax\":\"02-1111-2222\",\"no\":101,\"name\":\"홍길동\",\"email\":\"hong@test.com\",\"registeredDate\":\"10월 5, 2021\"},\"title\":\"Hello\"}";
+
+    Map<String,Object> map = new Gson().fromJson(jsonStr, Map.class);
+
+    int v1 = Integer.parseInt((String)map.get("no"));
+    Object v2 = map.get("title");
+    Object v3 = map.get("manager");
+
+    System.out.println(int.class.getName());
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     System.out.println(v2.getClass().getName());
     System.out.println(v3.getClass().getName());
 

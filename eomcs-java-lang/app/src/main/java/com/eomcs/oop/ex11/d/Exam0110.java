@@ -2,7 +2,11 @@
 package com.eomcs.oop.ex11.d;
 
 class A {
+<<<<<<< HEAD
   int v1;
+=======
+
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
   void m1() {
     // 메서드 안에 정의하는 클래스를 "local class"라 한다.
     // - 특정 메서드 안에서만 사용되는 경우 로컬 클래스로 정의한다.
@@ -13,6 +17,7 @@ class A {
     // - 메서드를 호출할 때 클래스가 정의된다는  뜻이 아니다.
     class X {
 
+<<<<<<< HEAD
       void f() {
         A.this.v1 = 100; // 바깥클래스.바깥클래스의인스턴스를담는내장변수
       } // 이게 아래 static 메서드에서는 통하지 않는다. 내장변수this가 없으니
@@ -22,11 +27,22 @@ class A {
 
   static void m2() {
 
+=======
+    }
+    X obj = new X();
+  }
+
+  static void m2() {
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     // 메서드 안에 정의하는 클래스를 "local class"라 한다.
     class X {
 
     }
+<<<<<<< HEAD
     X obj = new X(); // static 메서드라, 빌트인객체 없음 => 바깥객체의 주소를 담을 수 없다
+=======
+    X obj = new X();
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
   }
 }
 

@@ -13,9 +13,13 @@ public class Exam0320 {
 
   public static void main(String[] args) {
 
+<<<<<<< HEAD
 
 
     // 람다
+=======
+    // 람다 
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
     // 파라미터와 리턴 값이 있는 메서드 구현하기
     test((a, b) -> a + b);
 

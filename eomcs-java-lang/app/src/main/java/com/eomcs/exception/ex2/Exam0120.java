@@ -24,7 +24,11 @@ public class Exam0120 {
         System.out.println("입력 값이 유효하지 않습니다.");
         keyScan.nextLine(); // 입력이 잘못되었을 경우, 나머지 입력을 무시한다.
 
+<<<<<<< HEAD
       } catch (Throwable e) {
+=======
+      } catch (RuntimeException e) {
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
         System.out.println(e.getMessage());
       } 
     }

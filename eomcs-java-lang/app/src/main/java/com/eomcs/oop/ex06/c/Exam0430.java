@@ -49,6 +49,7 @@ public class Exam0430 {
       System.out.printf("  => this.working(%s), super.working(%s)\n", this.working, super.working);
       System.out.printf("  => this.age(%s), super.age(컴파일 오류!) \n", this.age /*, super.age*/);
     }
+<<<<<<< HEAD
     
     void print2() {
       System.out.println("A3.print2():");
@@ -57,6 +58,8 @@ public class Exam0430 {
       System.out.printf("  => this.working(%s), super.working(%s)\n", this.working, super.working);
       System.out.printf("  => this.age(%s), super.age(컴파일 오류!) \n", this.age /*, super.age*/);
     }
+=======
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
   }
 
 
@@ -90,6 +93,7 @@ public class Exam0430 {
     A4 obj4 = new A4();
     obj4.print();
     System.out.println("--------------------------------");
+<<<<<<< HEAD
     
     A3 obj5 = new A4();
     obj5.print(); // A4의 print()
@@ -100,5 +104,7 @@ public class Exam0430 {
   
     obj5.print2(); // A.print2();
     System.out.println("--------------------------------");
+=======
+>>>>>>> fe168bb4781b87d021b44abf4c31866959ff6805
   }
 }
